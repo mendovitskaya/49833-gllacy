@@ -6,6 +6,17 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+           </div>
+    <div class="slide-wrapper">
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-left">
@@ -21,47 +32,57 @@
         </nav>
         </div>
         <div class="header-right">
-        <div class="header-right-block search-block">
-          <img src="img/lupa.svg" alt="search" width="17" height="17">
-        </div>
-        <div class="header-right-block login-block">
-          <img src="img/into.svg" alt="search" width="17" height="17">
+        <a href="#" class="header-right-block search-block">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16.687" height="16.688" viewBox="0 0 16.687 16.688"><path id="Лупа" class="cls-1" fill="#ffffff" d="M11.936 10.497h-.755l-.263-.26a6.212 6.212 0 1 0-.675.674l.263.263v.755l4.773 4.76 1.423-1.422zm-5.73 0a4.29 4.29 0 1 1 4.3-4.29 4.294 4.294 0 0 1-4.3 4.29z"/></svg>
+        </a>
+        <a class="header-right-block login-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="19" viewBox="0 0 20.063 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.99;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Вход" class="cls-1" d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" transform="translate(-970 -29)"/>
+</svg>
           <span>Вход</span>
-        </div>
-        <div class="header-right-block basket-block">
-          <img src="img/basket.svg" alt="search" width="17" height="17">
+        </a>
+        <a class="header-right-block basket-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Корзина" class="cls-1" d="M1092.58,33.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.738,3.738,0,0,1-.13-1.055H1073a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1092.17,31.01,1092.84,32.141,1092.58,33.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.033,0.033,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,44.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1088.25,44.987Z" transform="translate(-1072 -29.031)"/>
+</svg>
           <span>Пусто</span>
-        </div>    
+        </a> 
+        </div>   
         <p class="contact-info">
           С 10 до 20, ежедневно <br>
           <b>8-812-450-25-25</b>
         </p>
-        </div>
+        
         
     </header>
     <div class="container clearfix">
-      <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+      <div class="titles">
+      <div class="main-title">Крем-брюле и пломбир с малиновым джемом</div>
+      <!--<div class="main-title">Шоколадный пломбир и лимонный щербет</div>
+      <div class="main-title">Пломбир с помадкой и клубничный щербет</div>!-->
+      </div>
+
         <a href="#" class="btn main-btn">Давайте оба!</a>
       
 
-    <div class="slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
-            <div class="slider-controls">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-         </div>
-            <div class="slides">
-               <div class="slide">
-                </div>
-               <div class="slide">
-                </div>
-               <div class="slide">
-                </div>
-            </div>
-    </div>
+    
 
     <div class="banner banner-left">
       <b>Малинка даром!</b>
@@ -77,25 +98,29 @@
     </div>
 
     <div class="products">
-      <div class="product"><img src="img/hit.png" alt=""><img src="img/1.png" width="265" height="265" alt="">
-        <div class="product-price">310 р/кг</div>
+      <div class="product"><img class="hit" src="img/hit.png" alt=""><img src="img/1.png" width="265" height="265" alt="">
+        <div class="product-price">310 <img src="img/rub.svg" alt="">/кг</div>
         <p class="product-title">Сливочное с апельсиновым 
           джемом и цитрусовой стружкой</p>
+          <a href="#" class="btn btn-product">Быстрый просмотр</a>
       </div>
-      <div class="product"><img src="img/hit.png" alt=""><img src="img/2.png" width="265" height="265" alt="">
-        <div class="product-price">380 р/кг</div>
+      <div class="product"><img class="hit" src="img/hit.png" alt=""><img src="img/2.png" width="265" height="265" alt="">
+        <div class="product-price">380 <img src="img/rub.svg" alt="">/кг</div>
         <p class="product-title">Сливочно-кофейное с кусочками 
           шоколада</p>
+        <a href="#" class="btn btn-product">Быстрый просмотр</a>
       </div>
-      <div class="product"><img src="img/hit.png" alt=""><img src="img/3.png" width="265" height="265" alt="">
-        <div class="product-price">355 р/кг</div>
+      <div class="product"><img class="hit" src="img/hit.png" alt=""><img src="img/3.png" width="265" height="265" alt="">
+        <div class="product-price">355 <img src="img/rub.svg" alt="">/кг</div>
         <p class="product-title">Сливочно-клубничное с присыпкой 
           из белого шоколада</p>
+        <a href="#" class="btn btn-product">Быстрый просмотр</a>
       </div>
-      <div class="product"><img src="img/hit.png" alt=""><img src="img/4.png" width="265" height="265" alt="">
-        <div class="product-price">415 р/кг</div>
+      <div class="product"><img class="hit" src="img/hit.png" alt=""><img src="img/4.png" width="265" height="265" alt="">
+        <div class="product-price">415 <img src="img/rub.svg" alt="">/кг</div>
         <p class="product-title">Сливочное крем-брюле с карамельной
           подливкой</p>
+        <a href="#" class="btn btn-product">Быстрый просмотр</a>
       </div>
     </div>
 
@@ -118,15 +143,14 @@
 
     <div class="clearfix">
     <div class="from-blog">
-      <b>Новое в нашем блоге</b>
+      Новое в нашем блоге</br>
       <a class="from-blog-title">10 способов сервировки
         фруктовых щербетов к столу</a>
     </div>
 
     <div class="subscribe">
-      Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
       <form action="#">
-        <input type="text">
         <input class="text" type="text" id="check1" placeholder="Электронная почта">
         <button class="btn">Отправить</button>
       </form>
@@ -135,9 +159,7 @@
 
     </div>
 
-    <div id="map" class="map">               
-    </div>
-
+    <div id="map" class="map"> 
     <div class="contacts-map">
       <p>Адрес главного офиса и офлайн магазина</p>
       <b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -145,9 +167,9 @@
       <b>8 812 450-25-25</b>
       <p>(с 10 до 20 ежедневно)</p>
 
-      <div class="btn">форма обратной связи</div>
+      <div class="btn">Форма обратной связи</div>
+    </div>              
     </div>
-    
 
     <footer class="main-footer clearfix">
       <div class="container">
@@ -160,6 +182,7 @@
       
 
       <div class="footer-nav">
+        <img src="img/heart.svg" alt="">
         <ul>
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
@@ -169,11 +192,13 @@
       </div>
 
       <div class="dev">
-        <a href="" class="logo"><img src="" alt=""></a>
+        <img src="img/logohtml.svg" alt="">
         <p>Сделано в <a href="#">HTML Academy 2016</a></p>
       </div>
       </div>
     </footer>
+    </div>
+    </div>
 
 
 
