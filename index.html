@@ -35,35 +35,73 @@
         <a href="#" class="header-right-block search-block">
            <svg xmlns="http://www.w3.org/2000/svg" width="16.687" height="16.688" viewBox="0 0 16.687 16.688"><path id="Лупа" class="cls-1" fill="#ffffff" d="M11.936 10.497h-.755l-.263-.26a6.212 6.212 0 1 0-.675.674l.263.263v.755l4.773 4.76 1.423-1.422zm-5.73 0a4.29 4.29 0 1 1 4.3-4.29 4.294 4.294 0 0 1-4.3 4.29z"/></svg>
         </a>
+
+<!--Всплывающее окно "Поиск"!-->
+    <div class="search-popup">
+      <form action="">
+        <input class="text" type="text" name="search" placeholder="Что ищем?">
+    </div>
+
         <a class="header-right-block login-block">
           <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="19" viewBox="0 0 20.063 19">
-  <defs>
-    <style>
+       <defs>
+       <style>
       .cls-1 {
         fill: #fff;
         fill-opacity: 0.99;
         fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Вход" class="cls-1" d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" transform="translate(-970 -29)"/>
-</svg>
+       }
+      </style>
+      </defs>
+       <path id="Вход" class="cls-1" d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" transform="translate(-970 -29)"/>
+      </svg>
           <span>Вход</span>
         </a>
+
+<!--Всплывающее окно "Вход"!-->
+    <div class="login-popup">
+      <form action="">
+        <input class="text" type="text" name="login" placeholder="Электронная почта">
+        <input class="password" type="password"  placeholder="Пароль">
+        <button class="btn">Войти</button>
+      </form>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </div>
+
         <a class="header-right-block basket-block">
           <svg xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
-  <defs>
-    <style>
+        <defs>
+        <style>
       .cls-1 {
         fill: #fff;
         fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Корзина" class="cls-1" d="M1092.58,33.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.738,3.738,0,0,1-.13-1.055H1073a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1092.17,31.01,1092.84,32.141,1092.58,33.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.033,0.033,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,44.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1088.25,44.987Z" transform="translate(-1072 -29.031)"/>
-</svg>
+        }
+      </style>
+      </defs>
+      <path id="Корзина" class="cls-1" d="M1092.58,33.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.738,3.738,0,0,1-.13-1.055H1073a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1092.17,31.01,1092.84,32.141,1092.58,33.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.033,0.033,0,0,0-.01.014h-10.67Zm0.52,3.009a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1079.25,44.987Zm9,0a1.874,1.874,0,1,1-1.88,1.874A1.874,1.874,0,0,1,1088.25,44.987Z" transform="translate(-1072 -29.031)"/>
+      </svg>
           <span>Пусто</span>
         </a> 
+
+<!--Всплывающее окно "Корзина"!-->
+    <div class="basket-popup">
+      <div class="basket-product">
+        <img src="" alt="">
+        <img src="" alt="">
+        <b>1,5кг*200 руб.</b>
+        <b>300 руб.</b>
+      </div>
+      <div class="basket-product">
+        <img src="" alt="">
+        <img src="" alt="">
+        <b>1,5кг*300 руб.</b>
+        <b>450 руб.</b>
+      </div>
+      <span>Итого:750руб.</span>   
+      <a href="" class="btn">Оформить заказ</a>  
+    </div>
+
         </div>   
         <p class="contact-info">
           С 10 до 20, ежедневно <br>
@@ -73,11 +111,11 @@
         
     </header>
     <div class="container clearfix">
-      <div class="titles">
+      
       <div class="main-title">Крем-брюле и пломбир с малиновым джемом</div>
-      <!--<div class="main-title">Шоколадный пломбир и лимонный щербет</div>
-      <div class="main-title">Пломбир с помадкой и клубничный щербет</div>!-->
-      </div>
+      <div class="main-title">Шоколадный пломбир и лимонный щербет</div>
+      <div class="main-title">Пломбир с помадкой и клубничный щербет</div>
+     
 
         <a href="#" class="btn main-btn">Давайте оба!</a>
       
@@ -160,6 +198,8 @@
     </div>
 
     <div id="map" class="map"> 
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123563!2d30.320894615512252!3d59.938796869048616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455469674551" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="contacts-map">
       <p>Адрес главного офиса и офлайн магазина</p>
       <b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -167,7 +207,7 @@
       <b>8 812 450-25-25</b>
       <p>(с 10 до 20 ежедневно)</p>
 
-      <div class="btn">Форма обратной связи</div>
+      <div class="btn btn-form">Форма обратной связи</div>
     </div>              
     </div>
 
@@ -201,7 +241,76 @@
     </div>
 
 
+    <div class="feedback">
+      <div class="close"><img src="img/x.svg" alt=""></div>
+      <form action="">
+        <b>Мы обязательно вам ответим!</b>
+        <input  type="text" name="name" placeholder="Как вас зовут?">
+        <input  type="text"  placeholder="Ваша почта для ответа?">
+        <textarea  name="text" id="check3" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn">Отправить</button>
+      </form>
+    </div>
 
+
+<script>
+
+  var linksearch = document.querySelector(".search-block");
+  var popupsearch = document.querySelector(".search-popup");
+  var search = popupsearch.querySelector("[name=search]");
+
+  linksearch.addEventListener("click", function(event){
+  event.preventDefault();
+  popupsearch.classList.toggle("search-popup-show");
+  search.focus();
+  });
+
+
+
+  var linklogin = document.querySelector(".login-block");
+  var popuplogin = document.querySelector(".login-popup");
+  var login = popupsearch.querySelector("[name=login]");
+
+  linklogin.addEventListener("click", function(event){
+  event.preventDefault();
+  popuplogin.classList.toggle("login-popup-show");
+  login.focus();
+  });
+
+
+
+  var linkbasket = document.querySelector(".basket-block");
+  var popupbasket = document.querySelector(".basket-popup");
+
+  linkbasket.addEventListener("click", function(event){
+  event.preventDefault();
+  popupbasket.classList.toggle("basket-popup-show");
+  });
+
+
+
+  var linkform = document.querySelector(".btn-form");
+  var popupfeedback = document.querySelector(".feedback");
+  var linkclose = document.querySelector(".close");
+
+  linkform.addEventListener("click", function(event){
+  event.preventDefault();
+  popupfeedback.classList.add("feedback-show");
+  });
+  
+  linkclose.addEventListener("click", function(event){
+  event.preventDefault();
+  popupfeedback.classList.remove("feedback-show");
+  });
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (popupfeedback.classList.contains("feedback-show")) {
+       popupfeedback.classList.remove("feedback-show");
+        }
+      }
+    });
+
+</script>
 
   </body>
 </html>
